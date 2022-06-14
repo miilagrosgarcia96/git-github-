@@ -72,8 +72,9 @@ background-image: url("/imagenes/hero.jpg");
 }
 
 .hero p{
+    font-family:'Times New Roman', Times, serif;
     font-size: 60px;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .section-one h1 {
@@ -82,25 +83,25 @@ background-image: url("/imagenes/hero.jpg");
     margin-top: 5%;
 }
 
-.section-one p {
+.section-one h2 {
     font-size: 20px;
     text-align: center;
     padding: 20px;
 }
 
 .productos h3 {
-    text-align: center;
+    text-align: left;
     margin: 20px 20px 40px 20px;
+    font-weight: bold;
 }
 
-.productos div {
+.container-fluid div {
     display: grid;
-    grid-template-columns: repeat(3, 0.25fr);
+    grid-template-columns: repeat(3,50fr);
     justify-content: space-around;
     align-items:center;
 }
-
-.productos div div {
+.container-fluid div div {
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -111,10 +112,10 @@ background-image: url("/imagenes/hero.jpg");
     border: groove 6px #7d4a31;
     border-radius: 15px;
     margin:10%;
-    padding-bottom: 5%;
+    padding-bottom:4%;
 }
 
-.productos div div h3 {
+.container-fluid div div h4 {
     background-color: #7d4a31;
     width: 100%;
     color: white;
@@ -123,12 +124,12 @@ background-image: url("/imagenes/hero.jpg");
     text-align: center;
 }
 
-.productos div div img {
+.container-fluid div div img{
     width: 200px;
-    height: 200px;
+    height:200px;
 }
 
-.productos div div a {
+.container-fluid div div a {
     text-decoration: none;
     color: white;
     background-color: green;
@@ -138,13 +139,14 @@ background-image: url("/imagenes/hero.jpg");
     font-style: italic;
     text-align: center;
 }
-.productos div div a:hover{
+.container-fluid div div a:hover{
 background-color: white;
-color:green
+color:green;
+
 }
 
 
-/*--------FOOTER-------*/
+/* --------FOOTER-------*/
 
 .footer {
     padding: 30px;
@@ -164,11 +166,12 @@ color:green
     flex-direction: row;
 }
 
-.footer div div h3 {
+.footer div div h5 {
     display: flex;
     flex-direction: row;
     justify-content: end;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .footer div ul {
@@ -185,6 +188,21 @@ color:green
 }
 
 /*--------PRODUCTOS-------*/
+.container-fluid div div h2 {
+    background-color: #7d4a31;
+    width: 100%;
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+}
+.footer div div h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    font-size: 20px;
+    font-style: bold;
+}
 
 /*--------NOSOTROS-------*/
 .main-1 {
@@ -283,7 +301,6 @@ color:green
 transform: scale(1.5,1);
     }
 
-
 /*-------- ANIMACIONES ------*/
 .texto-animado{
 animation-name: texto;
@@ -291,7 +308,7 @@ animation-duration: 4s;
 animation-iteration-count: 1;
 }
 
-.productos div div {
+.container-fluid div div {
     -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
             animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
@@ -345,4 +362,3 @@ animation-iteration-count: 1;
               transform-origin: 100% 0%;
     }
   }
-  
